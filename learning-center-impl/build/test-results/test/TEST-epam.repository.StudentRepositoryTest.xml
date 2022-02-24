@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="epam.repository.StudentRepositoryTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2022-02-23T21:08:01" hostname="DESKTOP-U60INIB" time="0.568">
+  <properties/>
+  <testcase name="getGradesReport()" classname="epam.repository.StudentRepositoryTest" time="0.465"/>
+  <testcase name="sortByName()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.037"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="findStudentById()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.004"/>
+  <testcase name="showStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="sortByAvgGrade()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="filterStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="getGradesReport()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="sortByName()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="findStudentById()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="showStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="sortByAvgGrade()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="filterStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=2, name=Marina, programId=1, marks={module2=90}, avgGrade=90.0)
+Student(id=1, name=Karl, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=2, name=Marina, programId=1, marks={module2=90}, avgGrade=90.0)
+Student(id=1, name=Karl, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+Student(id=1, name=Oleg, programId=1, marks={module1=80}, avgGrade=80.0)
+Student(id=2, name=Igor, programId=1, marks={module2=70}, avgGrade=70.0)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
