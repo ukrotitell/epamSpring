@@ -1,26 +1,30 @@
 package org.epam.operations;
 
 
-import epam.Program;
-import epam.Student;
-import epam.Module;
+import org.epam.PackageLogger;
+import org.epam.entity.Program;
+import org.epam.entity.Student;
+import org.epam.entity.Module;
 import org.epam.exception.IllegalInitialDataException;
+import org.epam.service.IStudentService;
 import org.epam.util.ConsoleOperations;
 import org.epam.util.ProgramsParser;
 import org.epam.util.StudentsWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import service.IStudentService;
 import org.epam.util.Comparators;
 
+import javax.annotation.PostConstruct;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
 @Component
 public class Operations {
+
     @Autowired
     private ProgramsParser programsFile;
     @Autowired
@@ -48,8 +52,6 @@ public class Operations {
         int programId = consoleOperations.readIntFromConsole();
         Student student = new Student(id, name, programId, Map.of(), 0.0);
         studentService.addStudent(student);
-        log.info("Студент добавлен");
-
     }
 
     public void setMark() throws FileNotFoundException, IllegalInitialDataException {
@@ -77,14 +79,13 @@ public class Operations {
         student.setAvgGrade(avgGrade / marks.size());
         int index = studentService.getListOfStudents().indexOf(student);
         studentService.updateStudent(index, student);
-        log.info("Оценка успешно изменена");
     }
 
     public void removeStudentFromList() {
         System.out.println("Введите id студента, которого удалить");
         int id = consoleOperations.readIntFromConsole();
         studentService.removeStudent(id);
-       // log.info("Студент удален");
+
     }
 
     public void countNumberOfDays() throws Exception {
@@ -129,12 +130,10 @@ public class Operations {
                 studentService.filterStudents()) {
             System.out.println(student);
         }
-        log.info("Студенты отфильтрованы");
     }
 
     public void createReport() {
         studentsWriter.writeInFile(path, studentService.getListOfStudents());
-        log.info("Отчет создан");
     }
 
     public void getGradesReport() {
@@ -157,6 +156,5 @@ public class Operations {
         for (int i = 0; i < studentList.size(); i++) {
             System.out.println(studentList.get(i));
         }
-        log.info("Студенты отсортированы");
     }
 }

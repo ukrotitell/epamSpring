@@ -1,6 +1,6 @@
 package org.epam.util;
 
-import epam.Student;
+import org.epam.entity.Student;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

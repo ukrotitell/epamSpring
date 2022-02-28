@@ -7,7 +7,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import repository.IStudentRepository;
-import org.epam.repository.StudentService;
+import org.epam.service.StudentService;
 import service.IStudentService;
 import org.epam.util.Comparators;
 

@@ -1,5 +1,8 @@
+import org.epam.PackageLogger;
+import org.epam.annotation.InjectRandomInt;
 import org.epam.config.Config;
 import org.epam.operations.Operations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.epam.util.ConsoleOperations;
@@ -7,12 +10,14 @@ import org.epam.util.ConsoleOperations;
 
 public class Main {
 
+
     public static void main(String[] args) throws Exception {
 //        StudentsParser studentsFile = new StudentsParser();
 //        IStudentRepository studentRepository = new StudentRepository(studentsFile);
 //        IStudentService studentService = new StudentService(studentRepository);
 //        ConsoleOperations consoleOperations = new ConsoleOperations();
 //        Operations operations = new Operations(studentService);
+
 
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);

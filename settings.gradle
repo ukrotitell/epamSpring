@@ -3,4 +3,5 @@ include 'learning-center-model'
 include 'learning-center-api'
 include 'learning-center-impl'
 include 'learning-center-impl'
+include 'learning-center-log'
 

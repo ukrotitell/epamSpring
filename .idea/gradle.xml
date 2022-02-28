@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/learning-center-api" />
             <option value="$PROJECT_DIR$/learning-center-impl" />
+            <option value="$PROJECT_DIR$/learning-center-log" />
             <option value="$PROJECT_DIR$/learning-center-model" />
           </set>
         </option>

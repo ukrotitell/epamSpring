@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="epam.util.PropertyParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-23T21:08:02" hostname="DESKTOP-U60INIB" time="0.008">
-  <properties/>
-  <testcase name="getPropertyVariable()" classname="epam.util.PropertyParserTest" time="0.008"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

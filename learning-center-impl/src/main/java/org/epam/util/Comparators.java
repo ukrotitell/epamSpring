@@ -1,7 +1,8 @@
 package org.epam.util;
 
 
-import epam.Student;
+
+import org.epam.entity.Student;
 
 import java.util.Comparator;
 

@@ -1,6 +1,6 @@
 package org.epam.util;
 
-import epam.Program;
+import org.epam.entity.Program;
 import org.epam.exception.IllegalInitialDataException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

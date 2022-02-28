@@ -1,10 +1,11 @@
 package org.epam.repository;
-import epam.Student;
+import org.epam.entity.Student;
 import org.epam.exception.IllegalInitialDataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import repository.IStudentRepository;
 import org.epam.util.StudentsParser;
+
+import javax.annotation.PostConstruct;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -23,9 +24,14 @@ public class StudentRepository implements IStudentRepository {
     public StudentRepository() {
     }
 
+    @PostConstruct
+    public List<Student> readStudents() {
+        return listOfStudents = studentsFile.readStudents(path);
+    }
+
     public StudentRepository(StudentsParser studentsFile) {
         this.studentsFile = studentsFile;
-        listOfStudents = studentsFile.readStudents(path);
+        readStudents();
     }
 
     public List<Student> getListOfStudents() {
@@ -88,8 +94,6 @@ public class StudentRepository implements IStudentRepository {
     public List<Student> sortBy(Comparator<Student> comparator, List<Student> list) {
         return list.stream().sorted(comparator).collect(Collectors.toList());
     }
-
-
 
     @Override
     public Map<Integer, Double> getGradesReport() {
