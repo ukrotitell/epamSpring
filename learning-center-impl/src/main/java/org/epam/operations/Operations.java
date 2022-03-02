@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.epam.util.Comparators;
 
@@ -22,8 +23,10 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
-@Component
+@EnableConfigurationProperties(PackageLogger.class)
 public class Operations {
+    @Autowired
+    private PackageLogger packageLogger;
 
     @Autowired
     private ProgramsParser programsFile;
@@ -36,8 +39,6 @@ public class Operations {
     @Autowired
     StudentsWriter studentsWriter;
     String path = "src/main/resources/studentsReport";
-
-    Logger log = LoggerFactory.getLogger(Operations.class);
 
     public Operations(IStudentService studentService) {
         this.studentService = studentService;
@@ -85,7 +86,9 @@ public class Operations {
         System.out.println("Введите id студента, которого удалить");
         int id = consoleOperations.readIntFromConsole();
         studentService.removeStudent(id);
-
+        System.out.println(packageLogger.getPackageName());
+        System.out.println(packageLogger.getClassName());
+        System.out.println(packageLogger.getMethodName());
     }
 
     public void countNumberOfDays() throws Exception {

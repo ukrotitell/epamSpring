@@ -1,14 +1,14 @@
 package epam.repository;
 
-import epam.Student;
+import org.epam.entity.Student;
+import org.epam.repository.IStudentRepository;
+import org.epam.service.IStudentService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import repository.IStudentRepository;
 import org.epam.service.StudentService;
-import service.IStudentService;
 import org.epam.util.Comparators;
 
 import java.util.ArrayList;

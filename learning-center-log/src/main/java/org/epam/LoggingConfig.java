@@ -14,10 +14,10 @@ public class LoggingConfig {
 
     }
 
-    @Pointcut(value = "execution(public PackageLogger org.epam.BeanConfig.packageLoggerAdd())")
-    public void pointcutAddStudent() {
-
-    }
+//    @Pointcut(value = "execution(public PackageLogger org.epam.BeanConfig.packageLoggerAdd())")
+//    public void pointcutAddStudent() {
+//
+//    }
 
     @Pointcut(value = "execution(* org.epam.operations.Operations.setMark() )")
     public void pointcutSetMark() {

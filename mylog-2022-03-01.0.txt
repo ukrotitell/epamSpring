@@ -1,0 +1,200 @@
+2022-03-01 12:07:21 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:27:13 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:27:48 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:29:37 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:30:05 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:33:27 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:34:30 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:35:25 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:35:45 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'studentRepository', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\repository\StudentRepository.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:38:16 Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:258)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(org.epam.LearningCenterApplication.java:10)
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.<clinit>(AbstractAspectJAdvisorFactory.java:62)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.initBeanFactory(AnnotationAwareAspectJAutoProxyCreator.java:82)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.setBeanFactory(AbstractAdvisorAutoProxyCreator.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1791)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 14 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.lang.annotation.Pointcut
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 20 common frames omitted
+2022-03-01 12:39:52 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'operations', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\operations\Operations.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-01 12:40:11 Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:258)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(org.epam.LearningCenterApplication.java:10)
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.<clinit>(AbstractAspectJAdvisorFactory.java:62)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.initBeanFactory(AnnotationAwareAspectJAutoProxyCreator.java:82)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.setBeanFactory(AbstractAdvisorAutoProxyCreator.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1791)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 14 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.lang.annotation.Pointcut
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 20 common frames omitted

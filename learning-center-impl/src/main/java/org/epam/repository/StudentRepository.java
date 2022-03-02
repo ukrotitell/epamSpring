@@ -13,7 +13,6 @@ import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-@Repository
 public class StudentRepository implements IStudentRepository {
 
     private String path = "src/main/resources/students.json";

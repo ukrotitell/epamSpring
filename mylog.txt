@@ -1,0 +1,213 @@
+2022-03-02 00:20:24 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'operations', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\operations\Operations.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 00:22:43 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'packageLogger', defined in class path resource [org/epam/BeanConfig.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-log\build\classes\java\main\org\epam\PackageLogger.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 00:23:31 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'packageLogger', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-log\build\classes\java\main\org\epam\PackageLogger.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 00:26:08 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'operations', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-impl\build\classes\java\main\org\epam\operations\Operations.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 00:29:54 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'packageLogger', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-log\build\classes\java\main\org\epam\PackageLogger.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 00:46:11 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field packageLogger in org.epam.operations.Operations required a bean of type 'org.epam.PackageLogger' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.epam.PackageLogger' in your configuration.
+
+2022-03-02 00:47:30 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field packageLogger in org.epam.operations.Operations required a bean of type 'org.epam.PackageLogger' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.epam.PackageLogger' in your configuration.
+
+2022-03-02 00:47:36 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field packageLogger in org.epam.operations.Operations required a bean of type 'org.epam.PackageLogger' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.epam.PackageLogger' in your configuration.
+
+2022-03-02 00:49:02 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field packageLogger in org.epam.operations.Operations required a bean of type 'org.epam.PackageLogger' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.epam.PackageLogger' in your configuration.
+
+2022-03-02 10:59:44 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field packageLogger in org.epam.operations.Operations required a bean of type 'org.epam.PackageLogger' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.epam.PackageLogger' in your configuration.
+
+2022-03-02 11:05:33 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'packageLogger', defined in class path resource [org/epam/config/Config.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpring\learning-center-log\build\classes\java\main\org\epam\PackageLogger.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-02 12:48:21 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'remove' to org.epam.PackageLogger:
+
+    Property: remove.class-name
+    Value: Operations
+    Origin: class path resource [application.properties] - 2:20
+    Reason: java.lang.IllegalStateException: No setter found for property: class-name
+
+Action:
+
+Update your application's configuration
+

@@ -20,10 +20,10 @@ public class LoggingAspect {
         log.info("Студент удален");
     }
 
-    @After("org.epam.LoggingConfig.pointcutAddStudent()")
-    public void addStudentLog() {
-        log.info("Студент добавлен");
-    }
+//    @After("org.epam.LoggingConfig.pointcutAddStudent()")
+//    public void addStudentLog() {
+//        log.info("Студент добавлен");
+//    }
 
     @After("org.epam.LoggingConfig.pointcutSetMark()")
     public void setMarkLog() {

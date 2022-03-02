@@ -12,6 +12,13 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.6.4'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-gradle-plugin
+    implementation group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.6.4'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-gradle-plugin
+    implementation group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.6.4'
+// https://mvnrepository.com/artifact/io.spring.gradle/dependency-management-plugin
+    implementation group: 'io.spring.gradle', name: 'dependency-management-plugin', version: '1.0.11.RELEASE'
 
 }
 

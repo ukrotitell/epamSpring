@@ -1,6 +1,13 @@
 package org.epam;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@ConfigurationProperties(prefix = "remove")
+@PropertySource("classpath:package.properties")
 public class PackageLogger {
+
     private String packageName;
     private String className;
     private String methodName;
@@ -31,6 +38,10 @@ public class PackageLogger {
 
     @Override
     public String toString() {
-        return packageName + "." + className + "." + methodName;
+        return "PackageLogger{" +
+                "packageName='" + packageName + '\'' +
+                ", className='" + className + '\'' +
+                ", methodName='" + methodName + '\'' +
+                '}';
     }
 }

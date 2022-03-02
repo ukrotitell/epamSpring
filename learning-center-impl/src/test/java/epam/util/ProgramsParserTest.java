@@ -1,7 +1,7 @@
 package epam.util;
 
 
-import epam.Program;
+import org.epam.entity.Program;
 import org.epam.exception.IllegalInitialDataException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

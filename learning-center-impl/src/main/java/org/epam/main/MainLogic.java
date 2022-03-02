@@ -1,24 +1,24 @@
-import org.epam.PackageLogger;
-import org.epam.annotation.InjectRandomInt;
+package org.epam.main;
+
 import org.epam.config.Config;
+import org.epam.exception.IllegalInitialDataException;
 import org.epam.operations.Operations;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.epam.util.ConsoleOperations;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.epam.util.ConsoleOperations;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
-
-public class Main {
-
+import java.io.FileNotFoundException;
+@Component
+public class MainLogic implements CommandLineRunner {
+    @Override
+    public void run(String... args) throws Exception {
+        main(args);
+    }
 
     public static void main(String[] args) throws Exception {
-//        StudentsParser studentsFile = new StudentsParser();
-//        IStudentRepository studentRepository = new StudentRepository(studentsFile);
-//        IStudentService studentService = new StudentService(studentRepository);
-//        ConsoleOperations consoleOperations = new ConsoleOperations();
-//        Operations operations = new Operations(studentService);
-
-
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
         Operations operations = context.getBean(Operations.class);
@@ -66,4 +66,3 @@ public class Main {
         } while (!consoleOperations.readStringFromConsole().equals("exit"));
     }
 }
-

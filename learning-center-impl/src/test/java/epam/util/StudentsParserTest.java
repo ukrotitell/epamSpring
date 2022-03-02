@@ -1,6 +1,6 @@
 package epam.util;
 
-import epam.Student;
+import org.epam.entity.Student;
 import org.junit.jupiter.api.Test;
 import org.epam.util.StudentsParser;
 
