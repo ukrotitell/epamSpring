@@ -1,7 +1,6 @@
 package org.epam.operations;
 
 
-import org.epam.PackageLogger;
 import org.epam.entity.Program;
 import org.epam.entity.Student;
 import org.epam.entity.Module;
@@ -15,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import org.epam.util.Comparators;
 
@@ -23,10 +23,9 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
-@EnableConfigurationProperties(PackageLogger.class)
 public class Operations {
-    @Autowired
-    private PackageLogger packageLogger;
+    Logger log = LoggerFactory.getLogger(Operations.class);
+
 
     @Autowired
     private ProgramsParser programsFile;
@@ -86,9 +85,7 @@ public class Operations {
         System.out.println("Введите id студента, которого удалить");
         int id = consoleOperations.readIntFromConsole();
         studentService.removeStudent(id);
-        System.out.println(packageLogger.getPackageName());
-        System.out.println(packageLogger.getClassName());
-        System.out.println(packageLogger.getMethodName());
+        log.info("log");
     }
 
     public void countNumberOfDays() throws Exception {

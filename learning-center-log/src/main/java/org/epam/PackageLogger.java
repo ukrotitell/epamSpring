@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @ConfigurationProperties(prefix = "remove")
-@PropertySource("classpath:package.properties")
 public class PackageLogger {
 
     private String packageName;

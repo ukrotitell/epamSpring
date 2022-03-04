@@ -211,3 +211,187 @@ Action:
 
 Update your application's configuration
 
+2022-03-03 23:24:03 Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingConfig.class]; nested exception is java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:457)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(LearningCenterApplication.java:13)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:512)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:495)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: The name or value attribute of @ConditionalOnProperty must be specified
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.getNames(OnPropertyCondition.java:129)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.<init>(OnPropertyCondition.java:122)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.determineOutcome(OnPropertyCondition.java:88)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.getMatchOutcome(OnPropertyCondition.java:55)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 25 common frames omitted
+2022-03-03 23:25:08 Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingConfig.class]; nested exception is java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:457)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(LearningCenterApplication.java:13)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:512)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:495)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: The name or value attribute of @ConditionalOnProperty must be specified
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.getNames(OnPropertyCondition.java:129)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.<init>(OnPropertyCondition.java:122)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.determineOutcome(OnPropertyCondition.java:88)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.getMatchOutcome(OnPropertyCondition.java:55)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 25 common frames omitted
+2022-03-03 23:25:59 Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingConfig.class]; nested exception is java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:457)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(LearningCenterApplication.java:13)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:512)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:495)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: The name or value attribute of @ConditionalOnProperty must be specified
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.getNames(OnPropertyCondition.java:129)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.<init>(OnPropertyCondition.java:122)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.determineOutcome(OnPropertyCondition.java:88)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.getMatchOutcome(OnPropertyCondition.java:55)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 25 common frames omitted
+2022-03-03 23:28:23 Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingConfig.class]; nested exception is java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:457)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.epam.LearningCenterApplication.main(LearningCenterApplication.java:14)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.epam.LoggingConfig
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:512)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:495)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: The name or value attribute of @ConditionalOnProperty must be specified
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.getNames(OnPropertyCondition.java:129)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition$Spec.<init>(OnPropertyCondition.java:122)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.determineOutcome(OnPropertyCondition.java:88)
+	at org.springframework.boot.autoconfigure.condition.OnPropertyCondition.getMatchOutcome(OnPropertyCondition.java:55)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 25 common frames omitted
+2022-03-03 23:38:11 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'loggingAspect', defined in class path resource [org/epam/BeanConfig.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingAspect.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-03-03 23:38:25 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'loggingAspect', defined in class path resource [org/epam/BeanConfig.class], could not be registered. A bean with that name has already been defined in file [D:\epamHomework\example\LearningCenterSpringV2\epamSpring\learning-center-log\build\classes\java\main\org\epam\LoggingAspect.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+

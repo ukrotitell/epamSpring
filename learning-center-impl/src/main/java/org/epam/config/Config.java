@@ -1,6 +1,5 @@
 package org.epam.config;
 
-import org.epam.PackageLogger;
 import org.epam.annotation.InjectRandomIntAnnotationBeanPostProcessor;
 import org.epam.operations.Operations;
 import org.epam.repository.IStudentRepository;
@@ -11,7 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.epam.repository.StudentRepository;
 import org.epam.service.StudentService;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+@EnableAspectJAutoProxy
 @Configuration
 public class Config {
 
@@ -47,10 +48,7 @@ public class Config {
     public Operations operations() {
         return new Operations(studentService());
     }
-    @Bean
-    public PackageLogger packageLogger() {
-        return new PackageLogger();
-    }
+
 
 
     @Bean

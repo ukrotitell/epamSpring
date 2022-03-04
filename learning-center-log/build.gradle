@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 group 'org.goncharov.epam'
@@ -21,11 +23,14 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.6.4'
     implementation group: 'io.spring.gradle', name: 'dependency-management-plugin', version: '1.0.11.RELEASE'
     implementation 'org.hibernate:hibernate-validator:7.0.2.Final'
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor
     implementation group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.6.4'
-// https://mvnrepository.com/artifact/io.spring.gradle/dependency-management-plugin
     implementation group: 'io.spring.gradle', name: 'dependency-management-plugin', version: '1.0.11.RELEASE'
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+    implementation project(':learning-center-impl')
+// https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
+    implementation group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
+// https://mvnrepository.com/artifact/org.springframework/spring-aop
+    implementation group: 'org.springframework', name: 'spring-aop', version: '5.3.16'
 
 
 }
