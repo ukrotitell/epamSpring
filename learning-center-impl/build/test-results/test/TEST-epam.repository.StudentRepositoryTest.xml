@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="epam.repository.StudentRepositoryTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2022-03-03T20:07:47" hostname="DESKTOP-U60INIB" time="0.585">
+<testsuite name="epam.repository.StudentRepositoryTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2022-03-07T16:27:13" hostname="DESKTOP-U60INIB" time="0.802">
   <properties/>
-  <testcase name="getGradesReport()" classname="epam.repository.StudentRepositoryTest" time="0.468"/>
+  <testcase name="getGradesReport()" classname="epam.repository.StudentRepositoryTest" time="0.642"/>
   <testcase name="sortByName()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
-  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.044"/>
-  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.042"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
   <testcase name="findStudentById()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
-  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.004"/>
-  <testcase name="showStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.006"/>
+  <testcase name="showStudents()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
   <testcase name="sortByAvgGrade()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="filterStudents()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="filterStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
   <testcase name="getGradesReport()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
   <testcase name="sortByName()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="findStudentById()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
-  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
-  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="number" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
+  <testcase name="findStudentById()" classname="epam.repository.StudentRepositoryTest" time="0.003"/>
+  <testcase name="addStudent()" classname="epam.repository.StudentRepositoryTest" time="0.003"/>
+  <testcase name="updateStudent()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
   <testcase name="showStudents()" classname="epam.repository.StudentRepositoryTest" time="0.002"/>
   <testcase name="sortByAvgGrade()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>
   <testcase name="filterStudents()" classname="epam.repository.StudentRepositoryTest" time="0.001"/>

@@ -19,6 +19,7 @@ public class ProgramsParser {
     String property = propertyParser.getPropertyVariable();
     String path = "src/main/resources/" + property;
     Logger log = LoggerFactory.getLogger(ProgramsParser.class);
+
     public List<Program> getListOfPrograms() throws FileNotFoundException, IllegalInitialDataException {
         List<Program> programList = new ArrayList<>();
         InputStream inputStream = new FileInputStream(path);

@@ -1,11 +1,13 @@
 package org.epam.operations;
 
 
+import org.epam.aopconfig.PackageProperties;
 import org.epam.entity.Program;
 import org.epam.entity.Student;
 import org.epam.entity.Module;
 import org.epam.exception.IllegalInitialDataException;
 import org.epam.service.IStudentService;
+import org.epam.service.StudentService;
 import org.epam.util.ConsoleOperations;
 import org.epam.util.ProgramsParser;
 import org.epam.util.StudentsWriter;
@@ -24,23 +26,29 @@ import java.util.List;
 import java.util.Map;
 
 public class Operations {
-    Logger log = LoggerFactory.getLogger(Operations.class);
-
+    @Autowired
+    private List<PackageProperties> packageProperties;
 
     @Autowired
     private ProgramsParser programsFile;
     @Autowired
     private ConsoleOperations consoleOperations;
     @Autowired
-    private IStudentService studentService;
+    private StudentService studentService;
     @Autowired
     private Comparators comparators;
     @Autowired
     StudentsWriter studentsWriter;
     String path = "src/main/resources/studentsReport";
 
-    public Operations(IStudentService studentService) {
+    public Operations(StudentService studentService) {
         this.studentService = studentService;
+    }
+
+    public void removeStudentFromList() {
+        System.out.println("Введите id студента, которого удалить");
+        int id = consoleOperations.readIntFromConsole();
+        studentService.removeStudent(id);
     }
 
     public void addStudent() {
@@ -81,12 +89,6 @@ public class Operations {
         studentService.updateStudent(index, student);
     }
 
-    public void removeStudentFromList() {
-        System.out.println("Введите id студента, которого удалить");
-        int id = consoleOperations.readIntFromConsole();
-        studentService.removeStudent(id);
-        log.info("log");
-    }
 
     public void countNumberOfDays() throws Exception {
         System.out.println("Введите id студента");
@@ -126,7 +128,7 @@ public class Operations {
 
     public void filterStudents() {
         System.out.println("Средняя оценка выше 75:");
-        for (Student student:
+        for (Student student :
                 studentService.filterStudents()) {
             System.out.println(student);
         }

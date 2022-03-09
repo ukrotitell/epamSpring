@@ -9,7 +9,6 @@ import java.util.Map;
 @Data
 public class Student implements Serializable {
     private static final long serialVersionUID = 1L;
-    @InjectRandomInt(min=10, max = 100)
     private int id;
     private String name;
 

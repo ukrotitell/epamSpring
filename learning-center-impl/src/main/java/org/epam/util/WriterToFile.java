@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 
 public class WriterToFile {
     Logger log = LoggerFactory.getLogger(WriterToFile.class);
+
     public void writeInfoToFile(String path, Student student) {
         try (OutputStreamWriter writer =
                      new OutputStreamWriter(new FileOutputStream(path, true), StandardCharsets.UTF_8)) {
@@ -20,6 +21,5 @@ public class WriterToFile {
             log.error("Проблемы с записью в файл");
             e.printStackTrace();
         }
-
     }
 }

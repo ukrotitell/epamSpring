@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="epam.util.StudentsParserTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-03T20:07:48" hostname="DESKTOP-U60INIB" time="0.13">
+<testsuite name="epam.util.StudentsParserTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-07T16:27:14" hostname="DESKTOP-U60INIB" time="0.133">
   <properties/>
-  <testcase name="shouldReadStudents()" classname="epam.util.StudentsParserTest" time="0.13">
+  <testcase name="shouldReadStudents()" classname="epam.util.StudentsParserTest" time="0.133">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at epam.util.StudentsParserTest.shouldReadStudents(StudentsParserTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -91,7 +91,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[2022-03-04 00:07:48 [Test worker] ERROR org.epam.util.StudentsParser - РџСЂРѕР±Р»РµРјР° СЃ С‡С‚РµРЅРёРµРј СЃС‚СѓРґРµРЅС‚РѕРІ РёР· С„Р°Р№Р»Р°
+  <system-out><![CDATA[2022-03-07 20:27:14 [Test worker] ERROR org.epam.util.StudentsParser - Проблема с чтением студентов из файла
 ]]></system-out>
   <system-err><![CDATA[java.io.FileNotFoundException: src\test\resources\students.json (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
